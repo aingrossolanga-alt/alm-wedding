@@ -1,0 +1,55 @@
+.section{
+padding:150px 24px;
+background:#2f382c;
+color:white;
+text-align:center;
+}
+
+.eyebrow{
+color:#d7bd85;
+letter-spacing:.4em;
+text-transform:uppercase;
+font-size:.7rem;
+margin-bottom:22px;
+}
+
+.title{
+font-family:"Cormorant Garamond";
+font-size:clamp(3rem,6vw,5.5rem);
+font-weight:400;
+margin-bottom:80px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:40px;
+max-width:900px;
+margin:auto;
+}
+
+.grid strong{
+display:block;
+font-family:"Cormorant Garamond";
+font-size:clamp(4rem,8vw,7rem);
+font-weight:400;
+line-height:1;
+}
+
+.grid span{
+display:block;
+margin-top:16px;
+letter-spacing:.25em;
+text-transform:uppercase;
+font-size:.75rem;
+color:#d7bd85;
+}
+
+@media(max-width:700px){
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+gap:50px 20px;
+}
+
+}

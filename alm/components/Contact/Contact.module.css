@@ -1,0 +1,143 @@
+.section {
+  padding: 150px 24px;
+  background: #ffffff;
+  color: #30352e;
+}
+
+.header {
+  width: min(100%, 900px);
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 22px;
+  color: #66715e;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3.2rem, 7vw, 6rem);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.intro {
+  max-width: 650px;
+  margin: 35px auto 0;
+  color: #77776f;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.questions {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  border-top: 1px solid #dcd8cf;
+}
+
+.question {
+  border-bottom: 1px solid #dcd8cf;
+}
+
+.question summary {
+  min-height: 100px;
+  display: grid;
+  grid-template-columns: 60px 1fr 30px;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.question summary::-webkit-details-marker {
+  display: none;
+}
+
+.number {
+  color: #b59b63;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+}
+
+.question summary > span:nth-child(2) {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+.plus {
+  color: #697561;
+  font-size: 1.6rem;
+  font-weight: 300;
+  transition: transform 300ms ease;
+}
+
+.question[open] .plus {
+  transform: rotate(45deg);
+}
+
+.question > p {
+  max-width: 700px;
+  margin: -5px 30px 35px 75px;
+  color: #77776f;
+  line-height: 1.7;
+}
+
+.contact {
+  width: min(100%, 700px);
+  margin: 110px auto 0;
+  text-align: center;
+}
+
+.contact > p:first-child {
+  color: #b59b63;
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.contact h3 {
+  margin: 15px 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.small {
+  color: #77776f;
+}
+
+.button {
+  margin-top: 25px;
+  padding: 15px 35px;
+  border: 1px solid #45523f;
+  border-radius: 999px;
+  background: transparent;
+  color: #45523f;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 110px 20px;
+  }
+
+  .question summary {
+    grid-template-columns: 38px 1fr 25px;
+  }
+
+  .question > p {
+    margin: 0 25px 30px 53px;
+  }
+}

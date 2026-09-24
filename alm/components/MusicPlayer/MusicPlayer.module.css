@@ -1,0 +1,92 @@
+.player {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 9000;
+
+  height: 52px;
+  padding: 0 18px;
+
+  border: 1px solid rgba(215, 189, 133, 0.5);
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  background: rgba(42, 52, 39, 0.9);
+  color: #ffffff;
+
+  backdrop-filter: blur(12px);
+
+  cursor: pointer;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  color: #d7bd85;
+  font-size: 0.7rem;
+}
+
+.text {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.lines {
+  height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.lines i {
+  width: 2px;
+  height: 5px;
+  display: block;
+  background: #d7bd85;
+}
+
+.playing .lines i:nth-child(1) {
+  animation: sound 0.8s infinite alternate;
+}
+
+.playing .lines i:nth-child(2) {
+  animation: sound 0.55s infinite alternate;
+}
+
+.playing .lines i:nth-child(3) {
+  animation: sound 0.7s infinite alternate;
+}
+
+@keyframes sound {
+  from {
+    height: 4px;
+  }
+
+  to {
+    height: 17px;
+  }
+}
+
+@media (max-width: 700px) {
+  .player {
+    right: 18px;
+    bottom: 18px;
+
+    width: 48px;
+    height: 48px;
+    padding: 0;
+
+    justify-content: center;
+  }
+
+  .text,
+  .lines {
+    display: none;
+  }
+}
